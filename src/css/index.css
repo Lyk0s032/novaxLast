@@ -1,0 +1,494 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.home-container {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 100px;
+}
+.home-container .home {
+  background: url("https://wallpaperaccess.com/full/863607.png") center bottom;
+  background-attachment: fixed;
+  height: 700px;
+  background-size: cover;
+}
+.home-container .home .container-msj {
+  width: 70%;
+  margin-left: 20%;
+}
+.home-container .home .container-msj .msj {
+  display: inline-block;
+  margin-top: 300px;
+  width: 50%;
+}
+.home-container .home .container-msj .msj h1 {
+  font-size: 100px;
+  white-space: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+.home-container .home .container-msj .msj h3 {
+  margin: 0px;
+  font-size: 24px;
+  padding: 0px;
+}
+.home-container .home .container-msj .msj .download {
+  width: 50%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.home-container .home .container-msj .msj .download:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+.home-container .home-2 {
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+.home-container .home-2 .izquierda {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  vertical-align: top;
+  align-items: center;
+}
+.home-container .home-2 .izquierda img {
+  width: 40%;
+  margin-left: 30%;
+}
+.home-container .home-2 .derecha {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.home-container .home-2 .derecha .conta {
+  margin-top: 20px;
+  width: 80%;
+}
+.home-container .home-2 .derecha .conta .whoami {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+.home-container .home-2 .derecha .conta span {
+  font-size: 14px;
+  font-weight: 100;
+  color: #666;
+}
+.home-container .home-2 .derecha .vis {
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+}
+.home-container .home-2 .derecha .vis .whoami {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+.home-container .home-2 .derecha .vis span {
+  font-size: 14px;
+  font-weight: 100;
+  color: #666;
+}
+.home-container .bottom-home {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.home-container .bottom-home img {
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+}
+.home-container .sorteo .general-sorteo {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 100px;
+}
+.home-container .sorteo .general-sorteo .container-big-img {
+  width: 60%;
+  margin-left: 20%;
+}
+.home-container .sorteo .general-sorteo .container-big-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.home-container .sorteo .general-sorteo .small-images {
+  margin-top: 40px;
+}
+.home-container .sorteo .general-sorteo .small-images ul {
+  overflow-x: auto;
+  width: 100%;
+  text-align: center;
+}
+.home-container .sorteo .general-sorteo .small-images ul li {
+  white-space: normal;
+  display: inline-block;
+  width: 10%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.home-container .sorteo .general-sorteo .small-images ul li img {
+  width: 100%;
+}
+.home-container .sorteo .small-sorteo {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 100px;
+}
+.home-container .sorteo .small-sorteo .information-all {
+  padding: 40px;
+}
+.home-container .sorteo .small-sorteo .information-all .title {
+  padding: 10px;
+}
+.home-container .sorteo .small-sorteo .information-all .title h1 {
+  margin: 0px;
+  font-weight: 100;
+}
+.home-container .sorteo .small-sorteo .information-all .description {
+  padding: 10px;
+  margin-top: 20px;
+}
+.home-container .sorteo .small-sorteo .information-all .description span {
+  font-size: 14px;
+  color: #666;
+}
+.home-container .sorteo .small-sorteo .information-all .description .datails {
+  margin-top: 40px;
+}
+.home-container .sorteo .small-sorteo .information-all .description .datails h3 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.home-container .sorteo .small-sorteo .information-all .description .datails h3 span {
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 100;
+  float: right;
+}
+.home-container .sorteo .small-sorteo .information-all .description .datails .money {
+  border-top: 1px solid #eee;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: right;
+}
+.home-container .sorteo .small-sorteo .information-all .description .datails .money h1 {
+  margin: 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.home-container .nro {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 100px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.home-container .nro div {
+  width: 100%;
+  margin-top: 100px;
+}
+.home-container .nro div ul li {
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 1px solid #666;
+  width: 10%;
+  margin-right: 5%;
+  font-size: 30px;
+  font-weight: 100;
+  color: #ccc;
+}
+.home-container .factura {
+  margin-top: 150px;
+}
+.home-container .factura .tiquete {
+  margin-top: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 40%;
+  margin-left: 30%;
+}
+.home-container .factura .tiquete .header {
+  padding: 10px;
+  text-align: center;
+}
+.home-container .factura .tiquete .header strong {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.home-container .factura .tiquete .header span {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+.home-container .factura .tiquete .details {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.home-container .factura .tiquete .details table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.home-container .factura .tiquete .details table tbody tr th {
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #666;
+}
+.home-container .factura .tiquete .details table tbody tr .result {
+  text-align: right;
+}
+.home-container .factura .tiquete .details .numeros {
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.home-container .factura .tiquete .details .numeros .title-numeros {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #666;
+}
+.home-container .factura .tiquete .details .numeros .n {
+  padding: 20px;
+}
+.home-container .factura .tiquete .details .numeros .n h1 {
+  text-align: center;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+}
+.home-container .factura .tiquete .details .accion {
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.home-container .factura .tiquete .details .accion button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home-container .factura .tiquete .details .accion button:hover {
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .home-container .factura {
+    margin-top: 0px;
+    box-sizing: border-box;
+  }
+  .home-container .factura .tiquete {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.nav-home {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.nav-home .container {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.nav-home .container .leftIcon {
+  display: inline-block;
+  width: 30%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.nav-home .container .leftIcon img {
+  width: 50%;
+}
+.nav-home .container .right-nav {
+  padding-right: 30px;
+  display: inline-block;
+  width: 70%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.nav-home .container .right-nav ul {
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+}
+.nav-home .container .right-nav ul li {
+  box-sizing: border-box;
+  padding: 10px;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.nav-home .container .right-nav ul li span {
+  font-size: 14px;
+}
+.login-form {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #1fbad6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.login-form button[type="submit"]:hover {
+  background-color: #169ca8;
+}
+.login-form span.error {
+  display: block;
+  color: #f44336;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.menu-superior {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.opciones-navegacion ul {
+  list-style: none;
+  display: flex;
+}
+.opciones-navegacion li {
+  margin-right: 20px;
+}
+.opciones-navegacion a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.opciones-navegacion a:hover {
+  color: #666;
+}
+.menu-lateral {
+  position: fixed;
+  top: 60px;
+  /* Altura del menú superior */
+  left: 0;
+  width: 250px;
+  height: calc(100% - 60px);
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+.opciones-laterales {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.opciones-laterales .opciones-superiores {
+  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.opciones-laterales .opciones-superiores li {
+  padding: 10px 20px;
+  color: #000;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  cursor: pointer;
+}
+.opciones-laterales .opciones-superiores li:hover {
+  background-color: #f5f5f5;
+}
+.opciones-laterales .opciones-superiores li.active {
+  background-color: #e8e8e8;
+}
+.opciones-laterales .opciones-inferiores {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.opciones-laterales .opciones-inferiores li {
+  padding: 10px 20px;
+  color: #000;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 12px;
+}
+.opciones-laterales .opciones-inferiores li:hover {
+  background-color: #f5f5f5;
+}
+.opciones-laterales .divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
