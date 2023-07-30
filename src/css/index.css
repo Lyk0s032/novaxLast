@@ -103,6 +103,81 @@ body {
   font-weight: 100;
   color: #666;
 }
+@media screen and (max-width: 700px) {
+  .home-container .home {
+    background: url("https://wallpaperaccess.com/full/863607.png") center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
+  }
+  .home-container .home .container-msj {
+    width: 90%;
+    margin-left: 5%;
+    justify-content: center;
+    margin-top: 60%;
+  }
+  .home-container .home .container-msj .msj {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .home-container .home .container-msj .msj h1 {
+    font-size: 80px;
+  }
+  .home-container .home .container-msj .msj h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .home-container .home .container-msj .msj span {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .home-container .home-2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 120px;
+    padding: 0px;
+  }
+  .home-container .home-2 .izquierda.Delete {
+    display: none;
+  }
+  .home-container .home-2 .derecha {
+    padding: 0px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .home-container .home-2 .derecha .conta {
+    padding: 0px;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .home-container .home-2 .derecha .conta .whoami {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  .home-container .home-2 .derecha .conta span {
+    font-size: 14px;
+    font-weight: 100;
+    color: #666;
+  }
+  .home-container .home-2 .derecha .vis {
+    margin-top: 40px;
+    width: 100%;
+    text-align: left;
+  }
+  .home-container .home-2 .derecha .vis .whoami {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .home-container .home-2 .derecha .vis span {
+    font-size: 14px;
+    font-weight: 100;
+    color: #666;
+  }
+}
 .home-container .bottom-home {
   margin-top: 200px;
   margin-bottom: 100px;
@@ -304,6 +379,132 @@ body {
   color: white;
 }
 @media screen and (max-width: 800px) {
+  .home-container .sorteo {
+    box-sizing: border-box;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+  }
+  .home-container .sorteo .general-sorteo {
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .home-container .sorteo .general-sorteo .container-big-img {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .home-container .sorteo .general-sorteo .container-big-img img {
+    width: 60%;
+    border-radius: 10px;
+  }
+  .home-container .sorteo .general-sorteo .small-images {
+    padding: 0px;
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .home-container .sorteo .general-sorteo .small-images ul {
+    padding: 0px;
+    text-align: center;
+  }
+  .home-container .sorteo .general-sorteo .small-images ul li {
+    width: 12%;
+  }
+  .home-container .sorteo .small-sorteo {
+    width: 100%;
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .home-container .sorteo .small-sorteo .information-all {
+    padding: 10px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .title {
+    padding: 10px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .title h1 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 24px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description span {
+    font-size: 14px;
+    color: #666;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description .datails {
+    margin-top: 40px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description .datails h3 {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description .datails h3 span {
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 300;
+    float: right;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description .datails .money {
+    border-top: 1px solid #eee;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: right;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description .datails .money span {
+    font-size: 12px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description .datails .money h1 {
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 26px;
+  }
+  .home-container .sorteo .small-sorteo .information-all .description .datails .money h1 span {
+    font-size: 12px;
+  }
+  .home-container .nro {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 100px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .home-container .nro h1 {
+    font-size: 22px;
+  }
+  .home-container .nro div {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .home-container .nro div ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .home-container .nro div ul li {
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+    width: 10%;
+    margin-right: 5%;
+    font-size: 30px;
+    font-weight: 100;
+    color: #ccc;
+  }
   .home-container .factura {
     margin-top: 0px;
     box-sizing: border-box;
@@ -359,6 +560,39 @@ body {
 }
 .nav-home .container .right-nav ul li span {
   font-size: 14px;
+}
+@media screen and (max-width: 700px) {
+  .nav-home {
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  .nav-home .container .leftIcon {
+    width: 50%;
+  }
+  .nav-home .container .leftIcon img {
+    width: 50%;
+  }
+  .nav-home .container .right-nav {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  .nav-home .container .right-nav ul {
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+  }
+  .nav-home .container .right-nav ul li {
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+  .nav-home .container .right-nav ul li span {
+    font-size: 14px;
+  }
 }
 .login-form {
   max-width: 40%;

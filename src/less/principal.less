@@ -61,7 +61,9 @@ body{
         }
       }
     }
+  
   }
+  
   .home-2{
     width:100%;
     padding:30px;
@@ -112,6 +114,86 @@ body{
           font-weight: 100;
           color: #666;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width:700px) {
+
+    .home{
+        background: url("https://wallpaperaccess.com/full/863607.png") center bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        height: auto;
+        padding: 0px;
+        justify-content: center;
+      .container-msj{
+        width:90%;
+        margin-left: 5%;
+        justify-content: center;
+        margin-top:60%;
+        .msj{
+          width:100%;
+          margin-top:0px;
+          h1{
+            font-size: 80px;
+          }
+          h3{
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+          span{
+            font-size: 14px;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+    .home-2{
+      width:90%;
+      margin-left: 5%;
+      margin-top:120px;
+      padding:0px;
+      .izquierda.Delete{
+        display:none;
+      }
+      .derecha{
+        padding:0px;
+        width:100%;
+        margin-top:0px;
+
+      .conta{
+        padding:0px;
+        margin-top: 0px;
+        width:100%;
+        .whoami{
+          font-size: 24px;
+          margin-bottom: 30px;
+          font-weight: 300;
+        }
+        span{
+          font-size: 14px;
+          font-weight: 100;
+          color: #666;
+        }
+      }
+
+      .vis{
+        margin-top: 40px;
+        width:100%;
+        text-align: left;
+        .whoami{
+          font-size: 20px;
+          margin-bottom: 10px;
+          font-weight: 300;
+        }
+        span{
+          font-size: 14px;
+          font-weight: 100;
+          color: #666;
+        }
+      }
       }
     }
   }
@@ -336,6 +418,138 @@ body{
   }
 
   @media screen and (max-width: 800px) {
+
+    .sorteo{
+      box-sizing: border-box;
+      padding:0px;
+      width:100%;
+      margin:0px;
+      .general-sorteo{
+        width:100%;
+        vertical-align: top;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 100px;
+        padding:0px;
+        margin-left:0px;
+        .container-big-img{
+          width:80%;
+          margin-left:10%; 
+          text-align: center;
+          img{
+            width:60%;
+            border-radius: 10px;
+          }
+        }
+        .small-images{
+          padding:0px;
+          margin-top: 40px;
+          width:80%;
+          margin-left: 10%;
+          box-sizing: border-box;
+          text-align: left;
+          ul{
+            padding:0px;
+
+            text-align: center;
+            li{
+              width: 12%;
+            }
+          }
+        }
+      }
+      .small-sorteo{
+        width:100%;
+        margin:0px;
+        vertical-align: top;
+        display: inline-block;
+        box-sizing: border-box;
+        padding:10px;
+  
+        .information-all{
+          padding:10px;
+          .title{
+            padding:10px;
+            h1{
+              margin:0px;
+              font-weight: 100;
+              font-size: 24px;
+            }
+          }
+          .description{
+            padding:10px;
+            margin-top: 20px;
+            span{
+              font-size: 14px;
+              color: #666;
+            }
+            .datails{
+              margin-top: 40px;
+              h3{
+                font-size: 12px;
+                margin-top: 20px;
+                span{
+                  font-size: 12px;
+                  margin-left: 10px;
+                  font-weight: 300;
+                  float: right;
+                }
+              }
+  
+              .money{
+                border-top: 1px solid #eee;
+                padding:10px;
+                margin-top: 30px;
+                text-align: right;
+                span{
+                  font-size: 12px;
+                }
+                h1{
+                  margin:0px;
+                  margin-top: 10px;
+                  margin-left:10px;
+                  font-size: 26px;
+                  span{
+                    font-size: 12px;
+                  }
+                }
+              }
+              
+            }
+            
+          }
+        }
+      }
+    }
+    .nro{
+      width:100%;
+      margin-left:0%;
+      margin-top:100px;
+      border-top: 1px solid #eee;
+      text-align: center;
+      box-sizing: border-box;
+      h1{
+        font-size: 22px;
+      }
+      div{
+        width:100%;
+        margin-top:100px;
+        ul{
+          margin:0px;
+          padding:0px;
+          li{
+            display: inline-block;
+            padding:10px;
+            border-bottom:1px solid #666;
+            width:10%;
+            margin-right: 5%;
+            font-size: 30px;
+            font-weight: 100;
+            color: #ccc
+          }
+        }
+      }
+    }
     .factura{
       margin-top:0px;
       box-sizing: border-box;
@@ -395,6 +609,43 @@ body{
       }
     }
   }
+}
+
+@media screen and(max-width:700px) {
+  .nav-home{
+    box-sizing: border-box;
+    padding:0px;
+    .container{
+      .leftIcon{
+        width:50%;
+  
+        img{
+          width:50%;
+        }
+      }
+      .right-nav{
+        width:50%;
+      box-sizing: border-box;
+      padding:0px;
+        ul{
+          text-align: right;
+          margin:0px;
+          padding:0px;
+          li{
+            box-sizing: border-box;
+            padding: 10px;
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 30px;
+            cursor:pointer;
+            span{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  } 
 }
 // .home-container {
 //   display: flex;

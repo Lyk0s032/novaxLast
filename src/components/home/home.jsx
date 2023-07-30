@@ -15,7 +15,7 @@ const Home = () => {
           </div>
       </div>
       <div className='home-2'>
-        <div className='izquierda'>
+        <div className='izquierda Delete'>
             <img src="https://i.pinimg.com/474x/9d/49/b2/9d49b20a3ad8ce69195f5b098da5b80b.jpg" />
         </div>
         <div className='derecha'>
