@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Nav from './nav/nav';
-
+import NovaX from './../../assets/NovaX.png';
 const Home = () => {
   return (
     <div className="home-container">
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </div>
       <div className='bottom-home'>
-            <img src="src\assets\NovaX.png" /> 
+            <img src={NovaX} /> 
       </div>
       
       {/* <Link to="/login" className="login-button">Iniciar sesión</Link> */}
