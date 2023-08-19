@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Nav from './nav/nav';
-import NovaX from './../../assets/NovaX.png';
+import NovaX from './../../assets/novaX.png';
 const Home = () => {
   return (
     <div className="home-container">
