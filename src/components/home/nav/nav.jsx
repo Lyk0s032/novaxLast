@@ -1,6 +1,8 @@
 import React from "react";
 import Nova from './../../../assets/novaX.png';
+import { useNavigate } from "react-router-dom";
 export default function Nav(){
+    const navigate = useNavigate();
     return (
         <div className="nav-home">
             <div className="container">
@@ -9,8 +11,8 @@ export default function Nav(){
                 </div>
                 <div className="right-nav">
                     <ul>
-                        <li>
-                            <span>Inicio</span>
+                        <li onClick={() => navigate('/')}>
+                            Inicio
                         </li>
                     </ul>
                 </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Download = () => { 
+  const download = 'https://expo.dev/artifacts/eas/h8w6Zcd4dBaFvWJpcKWofG.apk';
   return (
     <div className="home-container">
       <div className='home'>
@@ -11,7 +12,9 @@ const Download = () => {
                 <h3>Haz parte de nuestra gran comunidad</h3>
                 <span>Donde la suerte se conecta con el espiritu emprendedor</span>
                 <br /><br />
-                <button className='download'>Descargar</button>
+                <button className='download' onClick={() => {
+                    location.href = download;
+                }}>Descargar</button>
               </div>
           </div>
       </div>

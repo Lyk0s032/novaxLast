@@ -1,7 +1,52 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import Server from '../server';
+import CuatroCeroCuatro from '../CuatroCeroCuatro';
 
 export default function Facture(){
+
+    const params = useParams();
+    // Datos de cargando...
+    const [loading, setLoading] = useState(false);
+    // Datos del sorteo...
+    const [sorteo, setSorteo] = useState(null);
+
+    // Axiones
+    const axiosData = async () => {
+        console.log('Acción disparada.');
+        setLoading(true);
+        const axiosPeticion = axios.get(`https://novax.up.railway.app/app/lottery/ticket/get/${params.factura}`)
+        .then(res => {
+            setLoading(false);
+            if(res.status == 200){
+                console.log(res.data);
+                setSorteo(res.data);
+            }
+        }).catch(err => {
+            setLoading(false);
+            if(err.request.status == 404){
+                setSorteo(404);
+            }else if(err.request == 501 || !err.request){
+                setSorteo(501)
+            }
+        })
+    }
+    const navigate = useNavigate();
+    // Cuando el componente se cargue, dispara.
+    useEffect(() => {
+        axiosData();
+    }, [])
     return (
+        loading == true || !sorteo ?
+        <div className='login' style={{width:'100%', textAlign:'center', marginTop:'10%'}}>
+            <img style={{width:'50%'}} src="https://thumbs.gfycat.com/PepperyMediumBrahmancow-max-1mb.gif" />
+        </div>
+        : sorteo == 500 ?
+            <Server />
+        : sorteo == 404 ?
+            <CuatroCeroCuatro />
+        :
         <div className='home-container'> 
             <div className='factura'>
                 <div className='tiquete'>
@@ -14,39 +59,39 @@ export default function Facture(){
                             <tbody>
                                 <tr>
                                     <th>Número de referencia</th>
-                                    <th className='result'>111_E3212207563</th>
+                                    <th className='result'>{sorteo.reference}</th>
                                 </tr>
                                 <tr>
                                     <th>Sorteo</th>
-                                    <th className='result'>¡GRAN TTR SPORT 200!</th>
+                                    <th className='result'>{sorteo.lottery.name}</th>
                                 </tr>
                                 <tr>
                                     <th>A nombre de </th>
-                                    <th className='result'>Kevin Andrés Bolaños Orrego</th>
+                                    <th className='result'>{sorteo.nameUser}</th>
                                 </tr>
                                 <tr>
                                     <th>Número de teléfono</th>
-                                    <th className='result'>3212207563</th>
+                                    <th className='result'>{sorteo.phoneUser}</th>
                                 </tr>
                                 <tr>
                                     <th>Fecha de compra</th>
-                                    <th className='result'>06 / 05 / 2023</th>
+                                    <th className='result'>{`${sorteo.dia} / ${sorteo.mes} / ${sorteo.year}`}</th>
                                 </tr>
                                 <tr>
                                     <th>Atendido por </th>
-                                    <th className='result'>Jeanmaire Nicole Sayago</th>
+                                    <th className='result'>{sorteo.salesperson.name}</th>
                                 </tr>
                                 <tr>
                                     <th>Cantidad de números </th>
-                                    <th className='result'>3</th>
+                                    <th className='result'>{sorteo.numeros.length}</th>
                                 </tr>
                                 <tr>
                                     <th>Precio individual </th>
-                                    <th className='result'>2.000 COP</th>
+                                    <th className='result'>{new Intl.NumberFormat().format(sorteo.lottery.price)} COP</th>
                                 </tr>
                                 <tr>
                                     <th>Valor total </th>
-                                    <th className='result'>6.000 COP</th>
+                                    <th className='result'>{new Intl.NumberFormat().format(sorteo.valor)} COP</th>
                                 </tr> 
                             </tbody>
                         </table>
@@ -54,18 +99,18 @@ export default function Facture(){
                             <span className='title-numeros'>
                                 Números
                             </span>
-                            <div className='n'>
-                                <h1>7520</h1>
-                            </div>
-                            <div className='n'>
-                                <h1>1012</h1>
-                            </div>
-                            <div className='n'>
-                                <h1>0229</h1>
-                            </div>
+                            {
+                                sorteo.numeros.map((nro, i) => { 
+                                    return (
+                                        <div className='n' key={i+1}>
+                                            <h1>{nro.numero}</h1>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                         <div className='accion'>
-                            <button>Ir al sorteo</button>
+                            <button onClick={() => navigate(`/sort/${sorteo.lottery.id}`)}>Ir al sorteo</button>
                         </div>
                     </div>
                 </div>
