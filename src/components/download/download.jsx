@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Download = () => { 
-  const download = 'https://expo.dev/artifacts/eas/h8w6Zcd4dBaFvWJpcKWofG.apk';
+  const download = 'https://expo.dev/artifacts/eas/vp82gT6eYLprrPhiwxjpsH.apk';
   return (
     <div className="home-container">
       <div className='home'>

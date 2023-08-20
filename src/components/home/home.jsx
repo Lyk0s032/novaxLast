@@ -23,7 +23,7 @@ const Home = () => {
             <h1 className='whoami'>¿Quienes somos?</h1>
             <span >
               NovaX, nos sumergimos en el emocionante mundo del azar y la financiación empresarial. Somos un innovador punto de encuentro
-              donde la suerte se une con el espirítu emprendedor. <br /><br /> Nuestro objetivo principal es recaudar fondo para impulsar el crecimiento de empresas,
+              donde la suerte se une con el espíritu emprendedor. <br /><br /> Nuestro objetivo principal es recaudar fondo para impulsar el crecimiento de empresas,
               proporcionando a nuestros jugadores la oportunidad de ganar grandes premios mientras apoyan proyectos empresariales. <br /><br />Con juegos apasionantes, un enfoque transparante y la 
               emoción de las posibilidades infinitas, NovaX ofrece una experiencia única que combina la diversión del azar con el propósito de fomentar el éxito empresarial.
             </span>
